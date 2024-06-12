@@ -1,0 +1,53 @@
+.thankyou-overlay-container {
+  display: flex; /* Use flexbox to make the container take up the entire width */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+}
+
+
+.thankyou-container {
+  background-color: var(--clr-dkblue);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1.25rem; /* Add padding to the inside of the container */
+  border-radius: 1.25rem;
+}
+
+
+.svg {
+  margin: 1rem auto;
+}
+
+.rating-message-container {
+  background-color: rgb(124, 135, 152, 15%);
+  width: 60%;
+  margin: 1rem auto;
+  padding: 0.5rem 0.75rem;
+  border-radius: 30px;
+  font-family: var(--ff-primary);
+  color: var(--clr-orange);
+}
+
+.icon-star-thankyou {
+  width: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.thank-you {
+  margin: 2rem 0 1rem 0;
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+  .thankyou-container {
+    width: 100%;
+  }
+}

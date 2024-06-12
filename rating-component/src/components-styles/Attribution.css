@@ -1,0 +1,12 @@
+.attribution {
+  background-color: var(--clr-vdkblue);
+  color: var(--clr-ltgrey);
+  
+  font-family: Overpass-Regular;
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: var(--clr-white);
+}

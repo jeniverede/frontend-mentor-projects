@@ -1,0 +1,79 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1280px 
+*/
+
+/* css variables in root */
+:root {
+  /* colors */
+  --clr-light: hsl(0, 0%, 100%);
+  --clr-lightpink: hsl(275, 100%, 97%);
+  --clr-graypurp: hsl(292, 16%, 49%);
+  --clr-dkpurp: hsl(292, 42%, 14%);
+
+  /* font sizes */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-para: 1rem;
+
+  width: 375px;
+  margin: auto;
+}
+
+/* Font-face rules outside of :root */
+@font-face {
+  font-family: WorkSans-Regular;
+  src: local("WorkSans-Regular"),
+    url("../public/fonts/static/WorkSans-Regular.woff2") format("woff2"),
+    url("../public/fonts/static/WorkSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Work-Sans-Bold;
+  src: local("WorkSans-Bold"),
+    url("../public/fonts/static/WorkSans-Bold.woff2") format("woff2"),
+    url("../public/fonts/static/WorkSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: local("WorkSans-SemiBold"),
+    url("../public/fonts/static/WorkSans-SemiBold.woff2") format("woff2"),
+    url("../public/fonts/static/WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+/* desktop + tablet landscape*/
+/* larger font-size for desktop 72px, 60px, 24px, 18px */
+@media (min-width: 1080px) and (orientation: landscape) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+
+    width: 1280px;
+    margin: auto;
+  }
+}

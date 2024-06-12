@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What is React",
+    "answer": "React is a JavaScript library for building user interfaces."
+  },
+  {
+    "question": "What is JSX",
+    "answer": "JSX is a syntax extension for JavaScript used with React to describe what the UI should look like."
+  },
+  {
+    "question": "How do you create a React project?",
+    "answer": "Make sure you have Node.js installed and can use the npm command. Open a terminal on your computer or in VS Code. Change directory to your desktop (cd desktop) and use npm create vite@latest, follow the prompts to define your project name and choose React, then Javascript. Next use npm install to install node module packages."
+  },
+  {
+    "question": "What are the Virtual DOM and Actual DOM in React?",
+    "answer": "The Virtual DOM is an in-memory representation of the actual DOM. It is a JavaScript object tree that mirrors the structure of the actual DOM elements in the UI.\nThe Actual DOM is the real HTML DOM of a web page. It represents the current state of the UI, including all the HTML elements and their attributes."
+  },
+
+  {
+    "question": "How do you manage state in React?",
+    "answer": "Knowing how to manage state in a React application is important for handling data received from the backend and updating the UI accordingly. This includes understanding local state, lifting up state, and possibly using global state management libraries like Redux or Context API."
+  }
+]

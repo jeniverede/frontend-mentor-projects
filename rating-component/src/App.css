@@ -1,0 +1,80 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+/* css variables in root */
+:root {
+  /* Primary */
+  --clr-orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-ltgrey: hsl(217, 12%, 63%);
+  --clr-medgrey: rgb(124, 135, 152);
+  --clr-dkblue: hsl(213, 19%, 18%);
+  --clr-vdkblue: hsl(216, 12%, 8%);
+
+  /* font-family */
+  --ff-primary: Overpass;
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* font sizes - mobile */
+  --fs-h1: 1.5rem;
+  --fs-para: .875rem;
+
+  width: 375px;
+  margin: auto;
+}
+
+/* Font-face rules outside of :root */
+@font-face {
+  font-family: Overpass-Regular;
+  src: local("Overpass-Regular"),
+    url("../public/fonts/Overpass-Regular.woff2") format("woff2"),
+    url("../public/fonts/Overpass-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Overpass-Bold;
+  src: local("Overpass-Bold"),
+    url("../public/fonts/Overpass-Bold.woff2") format("woff2"),
+    url("../public/fonts/Overpass-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-family: var(--ff-primary);
+  color: var(--clr-white);
+}
+
+p {
+  font-size: var(--fs-para);
+  font-family: var(--ff-primary);
+  color: var(--clr-ltgrey);
+  line-height: 1.6;
+}
+
+/* desktop + tablet landscape*/
+/* larger font-size for desktop 72px, 60px, 24px, 18px */
+@media (min-width: 1440px) and (orientation: landscape) {
+  :root {
+    --fs-h1: 2.5rem;
+    --fs-para: 1rem;
+
+    width: 1440px;
+  }
+}

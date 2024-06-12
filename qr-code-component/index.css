@@ -1,0 +1,77 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Outfit;
+  background-color: var(--clr-ltgray);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-dkblue);
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-grayblue);
+}
+
+:root {
+  /* Colors */
+  --clr-light: #ffffff;
+  --clr-ltgray: #d6e2f0;
+  --clr-grayblue: #7b879d;
+  --clr-dkblue: #1f3251;
+  --clr-accent: #682bd7;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit-Regular"),
+    url("/fonts/Outfit-Regular.woff2") format("woff2"),
+    url("/fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit-Bold"), url("/fonts/Outfit-Bold.woff2") format("woff2"),
+    url("/fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* component style */
+.page_container {
+  width: 375px;
+  margin: auto;
+}
+.content_container {
+  background-color: var(--clr-light);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.qr_code_img {
+  width: 100%;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.text_container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-accent);
+}
