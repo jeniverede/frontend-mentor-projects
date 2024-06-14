@@ -1,0 +1,117 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Figtree;
+  background-color: var(--clr-accent);
+}
+
+:root {
+  /* Colors */
+  --clr-light: #ffffff;
+  --clr-gray: #808080;
+  --clr-dark: #121212;
+  --clr-accent: #f4d04e;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.body_text_dark {
+  color: var(--clr-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.body_text_gray {
+  color: var(--clr-gray);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: local("Figtree-Medium"),
+    url("/assets/fonts/Figtree-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Figtree-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: local("Figtree-Extrabold"),
+    url("/assets/fonts/Figtree-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/Figtree-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* component style */
+.page_container {
+  background-color: var(--clr-light);
+  width: 375px;
+  margin: 3rem auto 1rem;
+  border-radius: 1.875rem;
+  border: 1.5px solid;
+  box-shadow: 8px 8px 0 0 var(--clr-dark);
+}
+.content_container {
+  margin: 1.5rem;
+  border-radius: 1.875rem;
+}
+
+.illustration {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.text_container {
+  width: 100%;
+  margin: auto;
+}
+
+.chip {
+  background-color: var(--clr-accent);
+  width: 25%;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--clr-gray);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar_img {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-right: 1rem;
+}
+
+.attribution {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #682bd7;
+}
