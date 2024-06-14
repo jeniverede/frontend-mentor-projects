@@ -30,7 +30,7 @@ Users should be able to:
   (https://github.com/jeniverede/frontend-mentor-projects/tree/main/blog-preview-card)
 
 - Netlify URL: [blog-preview-card]
-  (https://blog-preview-card-rothrock.netlify.app)
+  (https://blog-preview-card-rothrock.netlify.app/)
 
 ## My process
 
