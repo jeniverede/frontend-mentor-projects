@@ -24,7 +24,10 @@ Page container parent div, with content-container div for QR code image and bold
 
 ### Links
 
-- Solution URL: [qr-code-component]
+- Github repository: [qr-code-component]
+(https://github.com/jeniverede/frontend-mentor-projects/tree/main/qr-code-component)
+
+- Netlify URL: [qr-code-component]
   (https://qr-code-component-rothrock.netlify.app)
 
 ## My process
