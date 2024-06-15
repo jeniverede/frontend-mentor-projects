@@ -1,0 +1,133 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  background-color: var(--clr-dark);
+}
+
+:root {
+  /* Colors */
+  --clr-accent: #c5f82a;
+  --clr-light: #ffffff;
+  --clr-grey: #333333;
+  --clr-dkgrey: #1f1f1f;
+  --clr-dark: #141414;
+
+  /* Typography */
+
+  h1 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--clr-light);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--clr-accent);
+    line-height: 1.6;
+    margin-top: 0.25rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--clr-light);
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.125rem;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Regular"), url("./assets/fonts/Inter-Regular.woff2"),
+    url("./assets/fonts/Inter-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-SemiBold"), url("./assets/fonts/Inter-SemiBold.woff2"),
+    url("./assets/fonts/Inter-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Bold"), url("./assets/fonts/Inter-Bold.woff2"),
+    url("./assets/fonts/Inter-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* component style */
+.page_container {
+  box-sizing: border-box;
+  background-color: var(--clr-dkgrey);
+  width: 275px;
+  margin: 6rem auto 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 0.75rem;
+}
+
+.content_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.list_container {
+  width: 100%;
+}
+
+.list_item {
+  background-color: var(--clr-grey);
+  margin: 0.875rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--clr-light);
+  padding: 0.75rem;
+}
+
+.list_item:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+  cursor: pointer;
+}
+
+.attribution {
+  color: var(--clr-light);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #682bd7;
+}
