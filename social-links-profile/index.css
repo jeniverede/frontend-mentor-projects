@@ -124,10 +124,13 @@ img {
 }
 
 .attribution {
+  display: flex;
+  flex-direction: column;
   color: var(--clr-light);
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
+  margin: .5rem;
   color: #682bd7;
 }
