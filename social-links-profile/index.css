@@ -15,7 +15,7 @@ body {
 
 :root {
   /* Colors */
-  --clr-accent: #c5f82a;
+  --clr-accent: #682bd7;
   --clr-light: #ffffff;
   --clr-grey: #333333;
   --clr-dkgrey: #1f1f1f;
@@ -119,7 +119,7 @@ img {
 
 .list_item:hover {
   background-color: var(--clr-accent);
-  color: var(--clr-dark);
+  color: var(--clr-light);
   cursor: pointer;
 }
 
