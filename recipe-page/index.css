@@ -181,3 +181,21 @@ tr:last-child td {
 .attribution a {
   color: #682bd7;
 }
+
+/* desktop */
+@media (min-width: 800px) and (orientation: landscape) {
+  .page_container {
+    width: 810px;
+    border-radius: 1rem;
+  }
+
+  .img_container {
+    width: 92%;
+    margin: auto;
+    padding: 1.5rem 0 0 0;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+}
