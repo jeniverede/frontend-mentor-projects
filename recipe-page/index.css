@@ -1,0 +1,183 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+body {
+  background-color: #ddd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --clr-nutmeg: #854632;
+  --clr-dkraspberry: #7b284f;
+  --clr-light: #ffffff;
+  --clr-rosewhite: #fff5fa;
+  --clr-eggshell: #f3e6d8;
+  --clr-ltgrey: #e4ded8;
+  --clr-wengebrown: #5f574e;
+  --clr-dkcharcoal: #302d2c;
+
+  /* Typography */
+  h1 {
+    font-family: YoungSerif;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: YoungSerif;
+    font-size: 1.5rem;
+    color: var(--clr-nutmeg);
+  }
+
+  h3 {
+    font-family: Outfit;
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@font-face {
+  font-family: Outfit;
+  src: local("Outfit-Regular"),
+    url("./assets/fonts/outfit/Outfit-Regular.woff2") format("woff2"),
+    url("./assets/fonts/outfit/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: local("Outfit-Semi-Bold"),
+    url("./assets/fonts/outfit/Outfit-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/outfit/Outfit-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: local("Outfit-Bold"),
+    url("./assets/fonts/outfit/Outfit-Bold.woff2") format("woff2"),
+    url("./assets/fonts/outfit/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: YoungSerif;
+  src: local("YoungSerif-Regular"),
+    url("./assets/fonts/young-serif/YoungSerif-Regular.woff2") format("woff2"),
+    url("./assets/fonts/young-serif/YoungSerif-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* page css */
+.page_container {
+  background-color: var(--clr-light);
+  width: 375px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.content_container {
+  padding: 2rem;
+}
+
+header {
+  width: 100%;
+}
+
+.preparation_container {
+  background-color: rgba(123, 40, 79, 0.1); /* background with 30% opacity */
+  margin: 2rem 0;
+  padding: 1.5rem;
+}
+
+.color_text {
+  color: var(--clr-dkraspberry);
+  margin: 0;
+}
+
+.preparation_list {
+  margin-bottom: 0;
+}
+
+/* ul li for all sections*/
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
+  padding-left: 1.5rem;
+}
+
+li::marker {
+  color: var(--clr-nutmeg);
+  font-weight: 700;
+}
+
+.instructions_container {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  margin: 2.25rem 0;
+  padding: 1rem 0;
+}
+
+ol {
+  margin-left: 1.25rem;
+  padding-left: 0;
+}
+
+ol li {
+  padding: 0 1.5rem;
+}
+
+.table_container {
+  width: 100%;
+}
+
+td {
+  font-family: Outfit;
+  text-align: left;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.measures {
+  color: var(--clr-nutmeg);
+  font-weight: 700;
+}
+
+.attribution {
+  font-family: Outfit;
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
+}
+.attribution a {
+  color: #682bd7;
+}
