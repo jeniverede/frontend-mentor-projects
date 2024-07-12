@@ -20,7 +20,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ### Links
 
 - Github repository: [recipe-page]
-  (https://github.com/jeniverede/frontend-mentor-projects/tree/main/product-preview-card)
+  (https://github.com/jeniverede/frontend-mentor-projects/tree/main/product-preview-card-component)
 
 - Netlify URL: [recipe-page-rothrock]
   (https://product-preview-card-rothrock.netlify.app/)
