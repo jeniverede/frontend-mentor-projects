@@ -1,0 +1,208 @@
+/* The designs were created to the following widths:
+- Mobile: 310px
+- Desktop: 1080px
+ */
+
+:root {
+  /* Colors */
+  --dkgreen: #3c8067;
+  --cream: #f2ebe3;
+  --vdkblue: #1c232b;
+  --dkgrayblue: #6c7289;
+  --white: #ffffff;
+
+  /* Typography */
+  h1 {
+    font-family: Fraunces;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Regular"),
+    url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"),
+    url("/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: local("Fraunces-Bold"), url("/fonts/Fraunces-Bold.woff2") format("woff2"),
+    url("/fonts/Fraunces-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* page css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.page_container {
+  background-color: var(--cream);
+  width: 310px;
+  height: auto;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.content_container {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+}
+
+.img_container .text_container {
+  width: 100%;
+}
+
+.text_container {
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+#main_img {
+  width: 100%;
+  border-radius: 0.75rem 0.75rem 0 0;
+  display: block;
+}
+
+.text_perfume {
+  color: var(--dkgrayblue);
+  line-height: 1.2;
+  letter-spacing: 0.25rem;
+  transform: scaleY(0.875);
+}
+
+.text_gray {
+  color: var(--dkgrayblue);
+  padding: 0.75rem 0 0 0;
+}
+
+.price_container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.text_green {
+  color: var(--dkgreen);
+  padding: 0 1.5rem 0 0;
+}
+
+.text_strikethrough {
+  color: var(--dkgrayblue);
+  text-decoration: line-through;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--dkgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+button:hover {
+  background-color: var(--vdkblue);
+}
+
+#icon {
+  width: 15px;
+  height: 15px;
+  padding-right: 1rem;
+}
+
+.text_white {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
+}
+.attribution a {
+  color: #682bd7;
+}
+
+/* tablet & small desktop */
+@media (min-width: 1080px) and (orientation: landscape) {
+  .page_container {
+    width: 100%;
+  }
+
+  .content_container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    
+  }
+
+  .img_container {
+    width: 50%;
+    height: auto;
+    display: flex;
+  }
+
+  #main_img {
+    content: url("/images/image-product-desktop.jpg");
+    border-radius: 0.75rem 0 0 0.75rem;
+    object-fit: cover;
+  }
+
+  .text_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
