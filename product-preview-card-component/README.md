@@ -19,10 +19,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Github repository: [recipe-page]
+- Github repository: [product-preview-card-component]
   (https://github.com/jeniverede/frontend-mentor-projects/tree/main/product-preview-card-component)
 
-- Netlify URL: [recipe-page-rothrock]
+- Netlify URL: [product-preview-card-component-rothrock]
   (https://product-preview-card-rothrock.netlify.app/)
 
 ## My process
