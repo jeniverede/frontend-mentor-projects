@@ -74,19 +74,19 @@ body {
 }
 
 /* start of header content */
-.header-content {
+header {
   text-align: center;
 }
 
-.header-content .light-text {
+header .light-text {
   font-weight: var(--fw-exlight);
 }
 
-.header-content .bold-text {
+header .bold-text {
   font-weight: var(--fw-semibold);
 }
 
-.header-content .para-text {
+header .para-text {
   font-size: 1rem;
   margin: 1rem 0 5rem 0;
 }
@@ -97,9 +97,17 @@ h1 {
 }
 
 h2 {
-  color: var(--neutral-grayblue);
   font-size: 1.125rem;
   font-weight: var(--fw-regular);
+}
+
+.para-text {
+  color: var(--neutral-grayblue);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--neutral-grayblue);
 }
 
 /* start of grid & cards */
@@ -167,12 +175,18 @@ h2 {
 }
 
 .card-text {
+  font-weight: var(--fw-regular);
   margin-bottom: 3rem;
 }
 
 .card-icon {
   display: flex;
   justify-content: end;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .attribution {
@@ -189,12 +203,12 @@ h2 {
     width: 100%;
   }
 
-  .header-content .light-text,
-  .header-content .bold-text {
+  header .light-text,
+  header .bold-text {
     font-size: 2.25rem;
   }
 
-  .header-content .para-text {
+  header .para-text {
     width: 40%;
     margin: 1.5rem auto;
   }
