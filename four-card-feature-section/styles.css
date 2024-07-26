@@ -1,0 +1,230 @@
+/* - The designs were created to the following widths:
+  Mobile: 375px
+  Desktop: 1440px */
+
+/* @font-face rules */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraLight.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  /* Colors - Primary */
+  --primary-red: #ea5353;
+  --primary-cyan: #45d3d3;
+  --primary-orange: #fcaf4a;
+  --primary-blue: #549ef2;
+
+  /* Colors - Neutral */
+  --neutral-dkblue: #4c4e61;
+  --neutral-grayblue: #a3a5ae;
+  --neutral-ltgray: #fafafa;
+
+  /* font weights */
+  --fw-exlight: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  /* box shadow */
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  --boxshadow: 0.5rem 0.75rem 2rem rgba(163, 165, 174, 0.5),
+    0.25rem 0.25rem 0.5rem rgba(163, 165, 174, 0.25);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+.page-container {
+  background-color: var(--neutral-ltgray);
+  width: 375px;
+  height: auto;
+  margin: auto;
+  padding: 3rem 1.75rem;
+}
+
+/* start of header content */
+.header-content {
+  text-align: center;
+}
+
+.header-content .light-text {
+  font-weight: var(--fw-exlight);
+}
+
+.header-content .bold-text {
+  font-weight: var(--fw-semibold);
+}
+
+.header-content .para-text {
+  font-size: 1rem;
+  margin: 1rem 0 5rem 0;
+}
+
+/* Typography for header content */
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  color: var(--neutral-grayblue);
+  font-size: 1.125rem;
+  font-weight: var(--fw-regular);
+}
+
+/* start of grid & cards */
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  height: auto;
+}
+
+#card-supervisor,
+#card-team,
+#card-karma,
+#card-calculator {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--boxshadow);
+}
+
+#card-supervisor {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#card-team {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#card-karma {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+#card-calculator {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.card-content {
+  padding: 1.75rem;
+}
+
+.card-border-top-01 {
+  border-top: 5px solid var(--primary-cyan);
+}
+.card-border-top-02 {
+  border-top: 5px solid var(--primary-red);
+}
+.card-border-top-03 {
+  border-top: 5px solid var(--primary-orange);
+}
+.card-border-top-04 {
+  border-top: 5px solid var(--primary-blue);
+}
+
+.card-border-top-01,
+.card-border-top-02,
+.card-border-top-03,
+.card-border-top-04 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  font-weight: var(--fw-semibold);
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  margin-bottom: 3rem;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: end;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: #682bd7;
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    width: 100%;
+  }
+
+  .header-content .light-text,
+  .header-content .bold-text {
+    font-size: 2.25rem;
+  }
+
+  .header-content .para-text {
+    width: 40%;
+    margin: 1.5rem auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    height: 100vh;
+    margin-top: 5rem;
+  }
+
+  #card-supervisor {
+    /* grid-row-start (2), grid-column-start(1), grid-row-end(3), grid-column-end(2) */
+    grid-area: 2 / 1 / 3 / 2;
+    transform: translateY(-55%);
+  }
+
+  #card-team {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  #card-karma {
+    grid-area: 3 / 2 / 4 / 3;
+    transform: translateY(-110%);
+  }
+
+  #card-calculator {
+    grid-area: 2 / 3 / 3 / 4;
+    transform: translateY(-55%);
+  }
+}
