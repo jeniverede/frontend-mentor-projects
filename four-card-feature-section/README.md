@@ -19,10 +19,10 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Github repository: [recipe-page]
+- Github repository: [four-card-feature-section]
   (https://github.com/jeniverede/frontend-mentor-projects/tree/main/four-card-feature-section)
 
-- Netlify URL: [recipe-page-rothrock]
+- Netlify URL: [four-card-feature-section-rothrock]
   (https://four-card-feature-section-rothrock.netlify.app/)
 
 ## My process
