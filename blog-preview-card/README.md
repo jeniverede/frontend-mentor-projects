@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/FireShot%20Blog%20preview%20card.jpg)
+![](./assets/images/Blog%20preview%20card.jpg)
 
 ### Links
 

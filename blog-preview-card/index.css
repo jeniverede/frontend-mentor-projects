@@ -31,17 +31,22 @@ h1:hover {
   cursor: pointer;
 }
 
-.body_text_dark {
-  color: var(--clr-dark);
+p {
+  color: var(--clr-gray);
+}
+
+.body_text_dark,
+.body_text_gray {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
 }
+
+.body_text_dark{
+  color: var(--clr-dark);
+}
 .body_text_gray {
   color: var(--clr-gray);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.6;
 }
 
 @font-face {
@@ -71,6 +76,7 @@ h1:hover {
   border: 1.5px solid;
   box-shadow: 8px 8px 0 0 var(--clr-dark);
 }
+
 .content_container {
   margin: 1.5rem;
   border-radius: 1.875rem;
@@ -95,10 +101,6 @@ h1:hover {
   text-align: center;
   border-radius: 0.5rem;
   font-weight: 700;
-}
-
-p {
-  color: var(--clr-gray);
 }
 
 .avatar {
