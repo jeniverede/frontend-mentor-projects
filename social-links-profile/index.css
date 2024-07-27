@@ -22,29 +22,40 @@ body {
   --clr-dark: #141414;
 
   /* Typography */
-
-  h1 {
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--clr-light);
-    margin-top: 1rem;
-    margin-bottom: 0;
+  h1,
+  h2,
+  p {
     line-height: 1.6;
   }
 
+  h1,
   h2 {
-    font-size: 0.75rem;
     font-weight: 600;
+  }
+
+  h1,
+  p {
+    color: var(--clr-light);
+  }
+
+  h2,
+  p {
+    font-size: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.375rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  h2 {
     color: var(--clr-accent);
-    line-height: 1.6;
     margin-top: 0.25rem;
   }
 
   p {
-    font-size: 0.75rem;
     font-weight: 400;
-    color: var(--clr-light);
-    line-height: 1.6;
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.125rem;
@@ -105,6 +116,10 @@ img {
   width: 100%;
 }
 
+.list_item,
+.list_item:hover {
+  color: var(--clr-light);
+}
 .list_item {
   background-color: var(--clr-grey);
   margin: 0.875rem 0;
@@ -113,13 +128,11 @@ img {
   font-family: Inter;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--clr-light);
   padding: 0.75rem;
 }
 
 .list_item:hover {
   background-color: var(--clr-accent);
-  color: var(--clr-light);
   cursor: pointer;
 }
 
@@ -131,6 +144,6 @@ img {
   text-align: center;
 }
 .attribution a {
-  margin: .5rem;
+  margin: 0.5rem;
   color: #682bd7;
 }
