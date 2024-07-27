@@ -54,7 +54,7 @@ hr {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #682bd7;
 }
 
 @media (min-width: 1080px) and (orientation: landscape) {

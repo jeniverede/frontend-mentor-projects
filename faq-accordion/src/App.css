@@ -28,14 +28,7 @@
     url("../public/fonts/static/WorkSans-Regular.woff2") format("woff2"),
     url("../public/fonts/static/WorkSans-Regular.woff") format("woff");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: Work-Sans-Bold;
-  src: local("WorkSans-Bold"),
-    url("../public/fonts/static/WorkSans-Bold.woff2") format("woff2"),
-    url("../public/fonts/static/WorkSans-Bold.woff") format("woff");
-  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
@@ -44,6 +37,16 @@
     url("../public/fonts/static/WorkSans-SemiBold.woff2") format("woff2"),
     url("../public/fonts/static/WorkSans-SemiBold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Work-Sans-Bold;
+  src: local("WorkSans-Bold"),
+    url("../public/fonts/static/WorkSans-Bold.woff2") format("woff2"),
+    url("../public/fonts/static/WorkSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Typography */

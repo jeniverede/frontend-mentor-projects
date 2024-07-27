@@ -14,12 +14,12 @@ export function Accordion() {
     };
     return (
         <>
-            <div className='page-container'>
-                <div className='background-img-top'>
+            <main className='page-container'>
+                <header className='background-img-top'>
                     <img src="/images/background-pattern-mobile.svg" alt="background image purple with bright purple lines" />
-                </div>
+                </header>
 
-                <div className='faq-container'>
+                <article className='faq-container'>
                     <div className='icon-star'>
                         <img src='/images/icon-star.svg' alt='icon star'>
                         </img>
@@ -43,12 +43,12 @@ export function Accordion() {
                         </div>
 
                     ))}
-                </div >
-                <div className="attribution">
+                </article >
+                <footer className="attribution">
                     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
                     Coded by <a href="#">Jennifer Rothrock</a>.
-                </div>
-            </div>
+                </footer>
+            </main>
         </>
     );
 }
