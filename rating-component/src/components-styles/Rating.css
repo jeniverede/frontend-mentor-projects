@@ -53,14 +53,17 @@
   font-size: 0.75rem;
 }
 
+.rating-item:hover,
+.rating-item.selected {
+  color: white;
+}
+
 .rating-item:hover {
   background-color: var(--clr-ltgrey);
-  color: white;
 }
 
 .rating-item.selected {
   background-color: var(--clr-orange);
-  color: white;
 }
 
 .btn-container {

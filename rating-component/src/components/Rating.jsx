@@ -24,18 +24,18 @@ export function Rating() {
 
     return (
         <>
-            <div className="page-container">
-                <div className="rating-container">
-                    <div className="star-container">
+            <main className="page-container">
+                <article className="rating-container">
+                    <section className="star-container">
                         <img className="icon-star" src="/images/icon-star.svg" alt="icon-star" />
-                    </div>
+                    </section>
                     <h1>How did we do?</h1>
                     <p>
                         Please let us know how we did with your support request. All feedback is appreciated
                         to help us improve our offering!
                     </p>
 
-                    <div className="rating-circles-container">
+                    <section className="rating-circles-container">
                         {ratingItems.map(item => (
                             <div
                                 key={item}
@@ -44,7 +44,7 @@ export function Rating() {
                                 {item}
                             </div>
                         ))}
-                    </div>
+                    </section>
 
                     {isSubmitted ? (
                         <ThankYou
@@ -58,8 +58,8 @@ export function Rating() {
                         </button>
                     )}
 
-                </div>
-            </div>
+                </article>
+            </main>
         </>
     );
 }

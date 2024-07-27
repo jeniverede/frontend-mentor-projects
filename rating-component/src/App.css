@@ -37,6 +37,7 @@
     url("../public/fonts/Overpass-Regular.woff2") format("woff2"),
     url("../public/fonts/Overpass-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -45,27 +46,27 @@
     url("../public/fonts/Overpass-Bold.woff2") format("woff2"),
     url("../public/fonts/Overpass-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
 }
 
 /* Typography */
 h1,
 h2,
-h3 {
-  line-height: 1;
+h3,
+p {
+  font-family: var(--ff-primary);
+  line-height: 1.6;
   margin: 0;
 }
 
 h1 {
   font-size: var(--fs-h1);
-  font-family: var(--ff-primary);
   color: var(--clr-white);
 }
 
 p {
   font-size: var(--fs-para);
-  font-family: var(--ff-primary);
   color: var(--clr-ltgrey);
-  line-height: 1.6;
 }
 
 /* desktop + tablet landscape*/
