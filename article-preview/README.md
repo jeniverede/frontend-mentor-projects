@@ -40,7 +40,7 @@ The last task is responsive views for tablet and desktop.
 - [React](https://reactjs.org/) - JS library (You need to have npm installed in order to view the project, npm install, then npm run dev)
 - Semantic HTML5 markup
 - CSS custom properties
-- Use of Grid
+- Use of Flexbox
 - Mobile-first workflow, media query
 - @font-face rules w/ Manrope Google fonts
 
