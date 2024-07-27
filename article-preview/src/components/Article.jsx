@@ -4,13 +4,13 @@ import { FooterOverlay } from "./FooterOverlay";
 export function Article() {
     return (
         <>
-            <div className="page-container">
-                <div className="preview-container">
+            <main className="page-container">
+                <section className="preview-container">
 
                     <img className="main-image" src="/images/drawers.jpg"
                         alt="image of green dresser with a vase and framed artwork" />
                     
-                    <div className="content-container">
+                    <article className="content-container">
                         <div className="text-container">
                             <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
                             <p>
@@ -19,9 +19,9 @@ export function Article() {
                         </div>
 
                         <FooterOverlay />
-                    </div>
-                </div>
-            </div >
+                    </article>
+                </section>
+            </main>
         </>
     );
 }

@@ -30,6 +30,7 @@
     url("/fonts/Manrope-Medium.woff2") format("woff2"),
     url("/fonts/Manrope-Medium.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -37,22 +38,29 @@
   src: local("Manrope-Bold"), url("/fonts/Manrope-Bold.woff2") format("woff2"),
     url("/fonts/Manrope-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
 }
 
 /* Typography */
 h1,
-h3 {
+h3,
+p {
   font-family: var(--ff-primary);
-  font-size: var(--fs-h1);
   line-height: 1.5;
   margin: 0;
   color: var(--clr-vdkgreyblue);
 }
 
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
 p {
-  font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  line-height: 1.5;
   color: var(--clr-greyblue);
 }
 
