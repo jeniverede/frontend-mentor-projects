@@ -15,7 +15,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./images/article-preview.jpg)
+![](./public/images/article-preview.jpg)
 
 ### Links
 
