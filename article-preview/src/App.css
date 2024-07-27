@@ -52,7 +52,6 @@ h3,
 p {
   font-family: var(--ff-primary);
   line-height: 1.5;
-  margin: 0;
   color: var(--clr-vdkgreyblue);
 }
 
