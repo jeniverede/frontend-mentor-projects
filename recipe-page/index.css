@@ -23,7 +23,7 @@ body {
 
   /* Typography */
   h1,
-  h2  {
+  h2 {
     font-family: YoungSerif;
   }
 
@@ -38,7 +38,7 @@ body {
   }
 
   h3,
-  h4  {
+  p  {
     font-family: Outfit;
   }
 
