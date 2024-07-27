@@ -37,7 +37,7 @@ The last task is responsive views for tablet and desktop.
 
 ### Built with
 
-- React
+- [React](https://reactjs.org/) - JS library (You need to have npm installed in order to view the project, npm install, then npm run dev)
 - Semantic HTML5 markup
 - CSS custom properties
 - Use of Grid
