@@ -12,7 +12,7 @@ export function FooterOverlay() {
 
     return (
         <>
-            <div className="footer-container">
+            <section className="footer-container">
                 <div className="footer-main">
                     <img className="img-avatar" src="/images/avatar-michelle.jpg" alt="image of article author" />
                     <div className="footer-text">
@@ -48,7 +48,7 @@ export function FooterOverlay() {
                         </div>
                     </div>
                 </div>
-            </div >
+            </section >
         </>
     );
 }

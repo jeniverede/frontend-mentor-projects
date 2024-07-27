@@ -1,3 +1,8 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
 :root {
   /* Colors */
   --clr-vdkgreyblue: #48556a;
@@ -13,7 +18,7 @@
   --ff-primary: "Manrope", sans-serif;
 
   /* font-weight */
-  --fw-med: 400;
+  --fw-med: 500;
   --fw-bold: 700;
 
   /* smaller text for mobile */
@@ -29,7 +34,7 @@
   src: local("Manrope-Medium"),
     url("/fonts/Manrope-Medium.woff2") format("woff2"),
     url("/fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
