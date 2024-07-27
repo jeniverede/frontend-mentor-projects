@@ -1,0 +1,83 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+  /* Colors */
+  --clr-vdkgreyblue: #48556a;
+  --clr-desdkblue: #6d7f97;
+  --clr-greyblue: #9eafc2;
+  --clr-ltgreyblue: #ecf2f8;
+
+  /* box shadow */
+  --bs: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.25),
+    0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+
+  /* font-family */
+  --ff-primary: "Manrope", sans-serif;
+
+  /* font-weight */
+  --fw-med: 500;
+  --fw-bold: 700;
+
+  /* smaller text for mobile */
+  /* font-size 30px, 24px, 18px, 14px */
+  --fs-h1: 1.125rem;
+  --fs-h3: 1rem;
+  --fs-body: 0.875rem;
+}
+
+/* Font-face rules outside of :root */
+@font-face {
+  font-family: Manrope;
+  src: local("Manrope-Medium"),
+    url("/fonts/Manrope-Medium.woff2") format("woff2"),
+    url("/fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: local("Manrope-Bold"), url("/fonts/Manrope-Bold.woff2") format("woff2"),
+    url("/fonts/Manrope-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Typography */
+h1,
+h3,
+p {
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  margin: 0;
+  color: var(--clr-vdkgreyblue);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  font-size: var(--fs-body);
+  color: var(--clr-greyblue);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* desktop + tablet landscape*/
+/* larger font-size for desktop 72px, 60px, 24px, 18px */
+@media (min-width: 1440px) and (orientation: landscape) {
+  :root {
+    --fs-h1: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
