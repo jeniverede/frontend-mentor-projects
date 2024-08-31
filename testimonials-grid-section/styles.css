@@ -1,0 +1,218 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* @font-face rules */
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url("./fonts/BarlowSemiCondensed-Medium.woff2") format("woff2"),
+    url("./fonts/BarlowSemiCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url("./fonts/BarlowSemiCondensed-SemiBold.woff2") format("woff2"),
+    url("./fonts/BarlowSemiCondensed-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  /* Colors - Background */
+  --neutral-lightgrayblue: #ecf2f8; /* body background color */
+  --primary-violet: #7541c8; /* card 1 background */
+  --primary-vdkgrayblue: #48556a; /* card 2 background */
+  --primary-vdkblackblue: #19212e; /* card 4 background */
+
+  /* Colors - Text */
+  --neutral-lightgray: #cfcfcf; /* testimonial-status card 3 & 5 */
+  --primary-white: #ffffff; /* card 1, 2, 4 text color */
+
+  /* Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+
+  /* font weights */
+  --fw-medium: 500;
+  --fw-semibold: 600;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #ecf2f8;
+  font-family: BarlowSemiCondensed, sans-serif;
+  line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column */
+  grid-template-rows: repeat(auto); /* 5 rows */
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.testimonial-card {
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 35px; /* Padding for spacing */
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-header {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Align items vertically in the center */
+  gap: 15px; /* Space between the image and text */
+  margin-bottom: 15px; /* Space below the header */
+}
+
+.testimonial-img {
+  width: 50px; /* Set a fixed width for the image */
+  height: 50px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the element and maintains aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid rgb(207, 207, 207, 50%);
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column; /* Stack name and status vertically */
+}
+
+.testimonial-name {
+  font-size: 20px;
+  font-weight: bold; /* Bold weight for name */
+  margin: 0; /* Remove default margin */
+}
+
+.testimonial-status {
+  font-weight: normal; /* Normal weight for status */
+  margin: 0; /* Remove default margin */
+}
+
+.testimonial-headline {
+  font-size: 1.25em; /* Slightly larger font size for headline */
+  margin: 5px 0 20px 0; /* Space above & below the headline */
+}
+
+.testimonial-paragraph {
+  font-size: 1em; /* Regular font size for the paragraph */
+  line-height: 1.6; /* Line height for readability */
+  margin: 0;
+}
+
+/* card background colors */
+.card1 {
+  background-color: #7541c8;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 30px;
+}
+
+.card2 {
+  background-color: #48556a;
+}
+
+.card4 {
+  background-color: #19212e;
+}
+
+.card3,
+.card5 {
+  background-color: #ffffff;
+}
+
+/* card text */
+.card1,
+.card2,
+.card4 {
+  color: #ffffff;
+}
+
+.card1 .testimonial-status,
+.card2 .testimonial-status,
+.card4 .testimonial-status {
+  color: hsl(0, 0%, 100%, 50%);
+}
+
+.card3 .testimonial-status,
+.card5 .testimonial-status {
+  color: hsl(0, 0%, 0%, 50%);
+}
+
+.card1 .testimonial-paragraph,
+.card2 .testimonial-paragraph,
+.card4 .testimonial-paragraph {
+  color: hsl(0, 0%, 100%, 50%);
+}
+
+.card3 .testimonial-paragraph,
+.card5 .testimonial-paragraph {
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.card4 img{
+  border: 2px solid #682bd7
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #682bd7;
+}
+
+/* desktop */
+@media (min-width: 1280px) and (orientation: landscape) {
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .card1 {
+    grid-column: span 2 / span 2;
+  }
+
+  .card2 {
+    grid-column-start: 3;
+  }
+
+  .card3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .card4 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .card5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
+
+  .testimonial-headline {
+    font-size: 1.5em; /* Slightly larger font size for headline */
+  }
+}
