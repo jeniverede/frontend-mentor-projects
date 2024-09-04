@@ -15,7 +15,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Screenshot
 
-![]("./images/Frontend Mentor - Testimonial Grid.jpg")
+![](./images/Frontend%20Mentor%20-%20Testimonial%20Grid.jpg)
 
 ### Links
 
