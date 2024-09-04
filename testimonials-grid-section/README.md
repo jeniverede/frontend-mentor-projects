@@ -19,11 +19,11 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Github repository: [testimonial-grid]
-  (https://github.com/jeniverede/frontend-mentor-projects/tree/main/testimonial-grid)
+- Github repository: [testimonials-grid-section]
+  (https://github.com/jeniverede/frontend-mentor-projects/tree/main/testimonials-grid-section)
 
-- Netlify URL: [testimonial-grid-rothrock]
-  (https://testimonial-grid-rothrock.netlify.app/)
+- Netlify URL: [testimonials-grid-rothrock]
+  (https://testimonials-grid-rothrock.netlify.app/)
 
 ## My process
 
