@@ -15,7 +15,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./public/images/article-preview.jpg)
+![](./images/article-preview-component.jpg)
 
 ### Links
 
@@ -36,8 +36,7 @@ have to change the variable in the root and all the instances are updated.
 The last task is responsive views for tablet and desktop.
 
 ### Built with
-
-- [React](https://reactjs.org/) - JS library (You need to have npm installed in order to view the project, npm install, then npm run dev)
+- Javascript
 - Semantic HTML5 markup
 - CSS custom properties
 - Use of Flexbox

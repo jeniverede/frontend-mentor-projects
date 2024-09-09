@@ -1,12 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article Preview</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Article Preview Component</title>
+</head>
+
+<body>
+  <div id="root">
+    <section class="page-container">
+      <div class="content-container">
+        <!-- Main Image Section -->
+        <header class="image-container">
+          <img class="main-image" src="./images/drawers.jpg"
+            alt="image of green dresser with a vase and framed artwork" />
+        </header>
+
+        <!-- Content Section with Heading and Paragraph -->
+        <section class="text-container">
+          <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+          <p class="paragraph-text">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+            I&apos;ve got some simple tips to help you make any room feel complete.
+          </p>
+        </section>
+
+        <!-- Footer Section with Icon, Name, Date, and Trigger for Hidden Menu -->
+        <footer>
+          <div class="footer-main">
+            <img class="img-avatar" src="/images/avatar-michelle.jpg" alt="image of article author">
+            <div class="footer-text">
+              <h2>Michelle Appleton</h2>
+              <p class="footer-paragraph-text">28 June 2020</p>
+            </div>
+
+            <div class="share-icon-container" id="menu-trigger">
+              <img class="share-icon" src="/images/icon-share.svg" alt="share arrow icon">
+            </div>
+          </div>
+
+          <div class="social-menu-hidden" id="social-menu">
+            <div class="footer-content">
+              <p class="text-share">SHARE</p>
+              <div class="icon-container">
+                <img class="icon-facebook" src="/images/icon-facebook.svg" alt="Facebook icon">
+                <img class="icon-twitter" src="/images/icon-twitter.svg" alt="Twitter icon">
+                <img class="icon-pinterest" src="/images/icon-pinterest.svg" alt="Pinterest icon">
+              </div>
+              <!-- Reverse share icon container -->
+              <div class="share-icon-container-reverse" id="menu-trigger-reverse">
+                <img class="share-icon-reverse" src="/images/icon-share-reverse.svg" alt="reverse share arrow icon" />
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Jennifer Rothrock</a>.
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
